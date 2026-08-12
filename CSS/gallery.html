@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        img{
+            height: 100px;
+            border-radius: 50%;
+        }
+        .inner{
+            height: fit-content;
+            border: 1px solid black;  
+            width: 18%;
+            /* display: flex; */
+           
+            background-color: rgb(93, 116, 116); 
+            margin: 5px;   
+            color: white;   
+        }
+        .inner button{
+            margin-bottom: 15px;
+            color: white;
+            background-color: black;
+            width: 50px;
+            transition: 1s ease-in-out;
+            border-radius: 12px;
+           
+        }
+        .inner button:hover{
+            margin-bottom: 15px;
+            color: rgb(1, 1, 1);
+            background-color: white;
+            
+        }
+
+        .outer{
+            background-color: rgb(144, 177, 92);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center; 
+            align-items: center;  
+            text-align: center;
+        }
+        .inner:nth-child(even){
+            background-color: rgb(219, 164, 83);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <img src="./Images/1.avif"  alt="">
+            <h1>sample text</h1>
+            <p>im. Voluptates iure, quisquam minima aspernatur obcaecati nisi  velit ipsa deleniti fugiat ex.</p>
+            <button>Buy</button>
+        </div>
+        <div class="inner">
+            <img src="./Images/1.avif"  alt="">
+            <h1>sample text</h1>
+            <p>im. Voluptates iure, quisquam minima aspernatur obcaecati nisi  velit ipsa deleniti fugiat ex.</p>
+            <button>Buy</button>
+        </div>
+        <div class="inner">
+            <img src="./Images/1.avif"  alt="">
+            <h1>sample text</h1>
+            <p>im. Voluptates iure, quisquam minima aspernatur obcaecati nisi  velit ipsa deleniti fugiat ex.</p>
+            <button>Buy</button>
+        </div>
+        <div class="inner">
+            <img src="./Images/1.avif"  alt="">
+            <h1>sample text</h1>
+            <p>im. Voluptates iure, quisquam minima aspernatur obcaecati nisi  velit ipsa deleniti fugiat ex.</p>
+            <button>Buy</button>
+        </div>
+        <div class="inner">
+            <img src="./Images/1.avif"  alt="">
+            <h1>sample text</h1>
+            <p>im. Voluptates iure, quisquam minima aspernatur obcaecati nisi  velit ipsa deleniti fugiat ex.</p>
+            <button>Buy</button>
+        </div>
+    </div>
+</body>
+</html>

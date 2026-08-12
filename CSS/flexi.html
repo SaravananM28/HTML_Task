@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #d1 {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+      }
+      li {
+        display: inline;
+      }
+      .hero {
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Content */
+      .hero-content {
+        max-width: 700px;
+        color: white;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+
+      /* Button */
+      .btn {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #0056b3;
+      }
+      .about{
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    padding:80px 10%;
+}
+
+/* Image */
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Content */
+
+.about-content{
+    flex:1;
+}
+
+.about-content h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.about-btn{
+    background:#007bff;
+    color:white;
+
+    border:none;
+    padding:12px 25px;
+
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.about-btn:hover{
+    background:#0056b3;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>Hello</div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Learn IT Skills for Your Career</h1>
+
+        <p>
+          Master Python, Full Stack Development, Data Analytics, Cloud
+          Computing, and get placement assistance.
+        </p>
+
+        <button class="btn">Get Started</button>
+      </div>
+      
+    </section>
+    <section class="about">
+
+    <div class="about-image">
+        <img src="about.jpg" alt="About Us">
+    </div>
+
+    <div class="about-content">
+        <h2>About Us</h2>
+
+        <p>
+            We provide industry-oriented IT training and help students
+            develop the technical skills required for their careers.
+        </p>
+
+        <p>
+            Our courses focus on practical learning, real-time projects,
+            and placement preparation.
+        </p>
+
+        <button class="about-btn">Read More</button>
+    </div>
+
+</section>
+    <div id="d1">
+      <div class="d2">
+        <img src="Images/1.avif" style="height: 200px; width: 200px" />
+        <h1>Hello</h1>
+      </div>
+      <div class="d2">
+        <img src="Images/1.avif" style="height: 200px; width: 200px" />
+        <h1>Hello</h1>
+      </div>
+      <div class="d2">
+        <img src="Images/1.avif" style="height: 200px; width: 200px" />
+        <h1>Hello</h1>
+      </div>
+    </div>
+  </body>
+</html>
