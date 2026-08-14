@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/logo.webp" type="image/x-icon">
+    <title>EMS</title>
+    <style>
+
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: small;
+            height: 100vh;
+            background: radial-gradient(#333,#000);
+            
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav h1 {
+            display: inline-block;
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+        h2{
+            color: white;
+        }
+        .hero{
+            color: white;
+            background-color: #33333388;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        .dashboard{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+        .dashboard section{
+            background-color: #444;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            width: 20%;
+            transition: 100ms ease-in-out;
+        }
+        .dashboard section:hover{
+            background-color: #555;
+        }
+        .recent_emp{
+            margin-top: 2rem;
+            background-color: #33333388;
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        .recent_emp table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #444;
+        }
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #444;
+        }
+        table th, table tr:hover {
+            background-color: #555;
+        }
+        table th {
+            background-color: #444;
+        }
+
+        .about{
+            margin-top: 2rem;
+            background-color: #33333388;
+            padding: 12px;
+            border-radius: 12px;
+            
+        }
+        article section img{
+            height: 200px;
+            border-radius: 12px;
+            
+        }
+        article section{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 50%;
+
+        }
+        article section:first-child{
+            width: 30%;
+        }
+        .about p{
+            display: flex;
+            text-align: justify;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            bottom: 0;
+        }
+        .contact{
+            margin-top: 2rem;
+            background-color: #33333388;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        .contact table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <h1>EMS</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Report</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <p>Welcome to the Employee Details Management System!</p>
+
+            <h2>Dashboard</h2>
+            <article class="dashboard">
+                <section>
+                    <h4>Total Employees</h4>
+                    <h1>225</h1>
+                </section>
+                <section>
+                    <h4>Active Employees</h4>
+                    <h1>120</h1>
+                </section>
+                <section>
+                    <h4>Inactive Employees</h4>
+                    <h1>30</h1>
+                </section>
+                <section>
+                    <h4>Departments</h4>
+                    <h1>10</h1>
+                </section>
+            </article>
+        </div>
+
+        <div class="recent_emp">
+            <h2>Recent Employees</h2>
+            <table style="width:100%; color:white; text-align:center;">
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>HR</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>IT</td>
+                    <td>Inactive</td>
+                </tr>
+                <tr>
+                    <td>Mike Johnson</td>
+                    <td>Finance</td>
+                    <td>Active</td>
+                </tr>
+            </table>
+        </div>
+        <div class="about">
+            <h2>About EMS</h2>
+            <article>
+                <section>
+                    <img src="./Images/logo.webp" alt="">
+                </section>
+                <section>
+                    <p>The Employee Details Management System (EMS) is designed to help organizations manage employee information efficiently. It provides a centralized platform for storing and accessing employee data, tracking performance, and managing HR processes.</p>     
+                    <p>The Employee Management System helps organizations maintain and manage employee information efficiently. It provides features for adding, viewing, updating, and removing employee records.</p>
+                    <p>The Employee Management System helps organizations maintain and manage employee information efficiently. It provides features for adding, viewing, updating, and removing employee records.</p>
+                </div>
+                </section>
+            </article>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please contact our support team at support@ems.com.</p>
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <td>123 Main Street, City, Country</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+1 (123) 456-7890</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>support@ems.com</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Employee Details Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
