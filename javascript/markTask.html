@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Task</title>
+</head>
+<body>
+    <form action="" >
+        <input type="number" name="" id="mark">
+        <br>
+        <button onclick="result()">Check</button>
+    </form>
+
+    <script>
+
+        function result(){
+            let mark = document.getElementById('mark').value;
+            if(mark > 35){
+                document.write("You Are Pass !!");
+            }else{
+                document.write("You Are Fail !!");
+            }
+        }
+    </script>
+</body>
+</html>

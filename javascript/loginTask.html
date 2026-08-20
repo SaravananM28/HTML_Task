@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <form action="">
+        <label for="">User Name:</label>
+        <input type="text" name="" id="uname">
+        <br>
+
+        <label for="">Password: </label>
+        <input type="password" name="" id="psw">
+        <br>
+
+        <button onclick="login()">Login</button>
+    </form>
+
+
+    <script>
+        function login(){
+            let user = document.getElementById('uname').value;
+            let password = document.getElementById('psw').value;
+
+            if(user == "admin" && password == '1234'){
+                alert("Login Successful");
+            }else{
+                alert("Login Fail");
+            }
+        }
+    </script>
+</body>
+</html>

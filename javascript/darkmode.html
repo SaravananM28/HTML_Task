@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Task</title>
+</head>
+<body id="body">
+    <button id="btn" onclick="changeMode()" ondblclick="doubleClick()">Dark Mode</button>
+
+    <script>
+        function changeMode(){
+            let bdy = document.getElementById('body');
+            let mode = document.getElementById('btn').style.color="blue"
+            bdy.style.backgroundColor = "black";
+
+        }
+
+        function doubleClick(){
+            let btns = document.getElementById('btn');
+            let bdy = document.getElementById('body');
+            bdy.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>

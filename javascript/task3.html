@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online or offline</title>
+</head>
+<body>
+    <h1 id="txt">Display Text</h1>
+    <button onclick="online()">Online</button>
+    <button onclick="offline()">Offline</button>
+
+
+    <script>
+
+        function online(){
+            let text = document.getElementById('txt').style.color="green";
+            let text2 = document.getElementById('txt').innerText="Online";
+        }
+
+        function offline(){
+            let text = document.getElementById('txt').style.color="red";
+            let text2 = document.getElementById('txt').innerText="Offline";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Calc Task</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Unit of Water You Consume:</label>
+        <input type="number" name="" id="water">
+        <br>
+        <button type="submit" onclick="calc(event)">
+            Calculate
+        </button>
+    </form>
+
+    <script>
+        function calc(event){
+            event.preventDefault();
+            let cwater = document.getElementById('water').value;
+
+            if(water < 500){
+                document.write("Your Bill Amount: "+ (cwater*1));
+            }else{
+                document.write("Your Bill Amount: "+ (cwater*2));
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Task</title>
+</head>
+
+<body>
+
+    <h1 id="text"></h1>
+    <p id="second"></p>
+
+    <form onsubmit="show(event)">
+        <label>Name:</label>
+        <input type="text" id="name">
+
+        <br>
+
+        <input type="submit" value="Go">
+    </form>
+
+    <script>
+        function show(event) {
+            event.preventDefault();
+
+            let name = document.getElementById('name').value;
+
+            let display1 = document.getElementById('text');
+
+            display1.innerText = "Welcome " + name + " !!";
+            let another = document.getElementById('second')
+
+            another.innerHTML = "<b>Welcome  you "+ name +"</b>"
+        }
+    </script>
+
+</body>
+</html>

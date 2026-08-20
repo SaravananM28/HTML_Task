@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="a" placeholder="Enter number for a">
+        <br>
+        <input type="number" id="b" placeholder="Enter number for b">
+        <br>
+        <input type="submit" value="Add" onclick="add()">
+        <input type="submit" value="Sub" onclick="sub()">
+        <input type="submit" value="Mul" onclick="mul()">
+        <input type="submit" value="Div" onclick="div()">
+    </form>
+
+
+    <script>
+        function add(){
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+
+            let c = Number(a) + Number(b);
+            document.write("Sum of a + b is: "+c);
+        }
+        function sub(){
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+
+            let c = Number(a) - Number(b);
+            document.write("Subtraction of a - b is: "+c);
+        }
+        function mul(){
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+
+            let c = Number(a) * Number(b);
+            document.write("Multiplication of a + b is: "+c);
+        }
+        function div(){
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+
+            let c = Number(a) / Number(b);
+            document.write("Divition of a / b is: "+c);
+        }
+    </script>
+</body>
+</html>

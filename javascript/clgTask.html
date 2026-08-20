@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Task</title>
+    <style>
+        .card{
+            height: 240px;
+            padding: 10px;
+            background: radial-gradient( rgba(69, 139, 3, 0.351) ,Orange);
+            margin: 15px;
+            display: inline-block;
+            border-radius: 12px;
+            border: 1px solid black;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .card img{
+            border-radius: 50%;
+            position: left;
+        }
+    </style>
+</head>
+<body>
+   <form action="">
+    <label for="name">Name:</label>
+    <input type="text" name="" id="name">
+    <br>
+    <label for="name">Course:</label>
+    <input type="text" name="" id="course">
+    <br>
+    <label for="name">Mobile Number:</label>
+    <input type="text" name="" id="mobile">
+    <br>
+    <button onclick="idCard(event)">Submit</button>
+   </form> 
+
+   <div class="card" id="card">
+    <em>Unique Identification</em><br>  
+    <img src="../Images/idpic.webp" alt="" height="100px">
+    <h3 id="dispalyname"></h3>
+    <h3 id="displaycourse"></h3>
+    <h3 id="displayno"></h3>
+   </div>
+
+
+   <script>
+    let card = document.getElementById('card')
+    card.style.display = "none"
+
+    function idCard(event){
+        event.preventDefault();
+        card.style.display = "inline-block"
+        let name = document.getElementById('name').value;
+        let course = document.getElementById('course').value;
+        let mobile = document.getElementById('mobile').value;
+
+
+        let disname = document.getElementById('dispalyname').innerHTML="Name : "+"<i>"+name+"</i>";
+        let discourse = document.getElementById('displaycourse').innerHTML="Course : "+"<i>"+course+"</i>";
+        let dismobile = document.getElementById('displayno').innerHTML="Mobile No : "+"<i>"+mobile+"</i>";
+
+    }
+   </script>
+</body>
+</html>

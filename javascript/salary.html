@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salary Decide</title>
+</head>
+<body> 
+    <script>
+        let score = 89;
+        let experience = 8;
+        let salary = null
+
+        if(score >= 85 && experience >5){
+            salary = 200000;
+        }else if(score >= 85 && experience >3){
+            salary = 100000;
+        }else if(score >= 85 && experience <=2){
+            salary = 50000;
+        }else{
+            document.write("You are Under Trainning Periord !!<br>");
+            salary=70000;
+        }
+        document.write("your salary is: "+salary);
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Task's</title>
+</head>
+<body>
+    <!--  Addition Task  -->
+    <!--
+    <form action="">
+        <h2>Addition </h2>
+        <label for="">Enter Number 1: </label>
+        <input type="number" id="num1">
+        <br>
+        <label for="">Enter Number 2: </label>
+        <input type="number" id="num2">
+        <br>
+        <input type="submit" onclick="add()" value="Add">
+    </form>
+-->
+
+
+<!--   Hotel Bill Task   -->
+   <!--
+    <h2>Hotel Restaurant Bill Generator</h2>
+    <form action="">
+        <label for="bill">Enter Your Bill Amount: </label>
+        <input type="number" name="" id="billamount">
+        <br>
+        <input type="submit" onclick="billcalc()" value="Calculate">
+    </form>
+-->
+
+<!--   Electricity Bill Calculator Task-->
+    <script>
+
+        function add(){
+            let a = document.getElementById('num1').value;
+            let b = document.getElementById('num2').value;
+            let c = Number(a)+Number(b);
+            console.log(typeof(a))
+            document.write("Sum of both Number is: "+ c)
+        }
+
+        // document.write("--------------Restaurant Bill generator------------------<br>");
+
+        function billcalc(){
+            let bill = document.getElementById('billamount').value;
+            console.log(typeof(billamount));
+    
+            if(bill > 10000){
+                let discount = bill*(10/100);
+                document.write("Your Total Bill Amount is: "+bill+"<br>");
+                document.write("Your Discount is: "+discount+"<br>");
+                document.write("Payable amount is: "+(bill-discount)+"<br>");
+            }else{
+                document.write("Payable amount is: "+bill+"<br>")
+            }
+        }
+
+
+        // document.write("--------------Electricity Bill Calculator------------------<br>");
+        
+        let units = document.getElementById('unit').value;
+        if(units <= 100){
+            document.write("Payable Amount is "+(units*2));
+        }else if(units <= 300){
+            document.write("Payable Amount is "+(units*3));
+        }else{
+            document.write("Payable Amount is "+(units*5));
+        }
+
+
+        // document.write("--------------Income Tax Calculator------------------<br>");
+        // let income = Number(prompt("Enter Your Annual Income: "))
+        // if(income <= 250000){
+        //     document.write("No Tax !!<br>")
+        // }else if(income >=250000 && income >= 500000){
+        //     let tax = income*(5/100);
+        //     document.write("Your Income Tax Amout Is "+tax);
+        // }else{
+        //     let tax = income*(10/100);
+        //     document.write("Your Income Tax Amout Is "+tax);
+        // }
+
+        // document.write("--------------Mobile Recharge------------------<br>");
+
+        // let recharge = Number(prompt("Enter your Recharge Amount:"));
+        // if(recharge > 500){
+        //     let cashback = recharge*(15/100);
+        //     document.write("Cash back amount is "+ cashback)
+        // }else if(recharge > 200){
+        //     let cashback = recharge*(10/100);
+        //     document.write("Cash back amount is "+ cashback)
+        // }else {
+        //     document.write("No Cash back")
+        // }
+
+        // document.write("--------------Hotel Room Rent------------------<br>");
+
+        // let days = Number(prompt("Enter Day you have stay:"));
+
+        // if(days <= 3){
+        //     document.write("Your Total Rent is: "+(days*1000));
+        // }else if(days <= 7){
+        //     document.write("Your Total Rent is: "+(days*900));
+        // }else{
+        //     document.write("Your Total Rent is: "+(days*800));
+        // }
+
+
+        // document.write("--------------Mark Calculator------------------<br>");
+
+        // let tamil = Number(prompt("Enter Your Mark For Tamil"));
+        // let english = Number(prompt("Enter Your Mark For English"));
+        // let maths = Number(prompt("Enter Your Mark For maths"));
+        // let science = Number(prompt("Enter Your Mark For science"));
+        // let social = Number(prompt("Enter Your Mark For social"));
+
+        // let tot = tamil+english+maths+science+social;
+
+        // document.write("Total Mark is: "+tot+"<br>");
+
+        // let avg = tot/5;
+        // document.write("AverageMark is: "+avg+"<br>");  
+        
+        // if(avg >= 50){
+        //     document.write("You Are Pass"); 
+        // }else{
+        //     document.write("Sorry You are Fail"); 
+        // }
+        // document.write("--------------Water Bill Calculator------------------<br>");
+        // let litter = Number(prompt("How Many Litters You were consumed"));
+        // if(litter <= 500){
+        //     document.write("Your Amount is: "+(litter*1)+"<br>");
+        // }else{
+        //     document.write("Your Amount is: "+(litter*2)+"<br>");
+        // }
+
+
+        // document.write("--------------Salary Increament Calculator------------------<br>");
+
+        // let experience = Number(prompt("Enter Your Experience"));
+        // let salary = 15000;
+
+        // if(experience >= 10){
+        //     let hike = salary*(20/100);
+        //     let payable = salary+hike
+        //     document.write("Your Salary is: "+payable);
+        // }else if(experience >= 5){
+        //     let hike = salary*(10/100);
+        //     let payable = salary+hike
+        //     document.write("Your Salary is: "+payable);
+        // }else{
+        //     let hike = salary*(5/100);
+        //     let payable = salary+hike
+        //     document.write("Your Salary is: "+payable);
+        // }
+
+
+        // document.write("--------------Savings Interest------------------<br>");
+
+        // let deposite = Number(prompt("Enter your Deposite Amount: "));
+
+        // if ( deposite >= 100000){
+        //     let interst = deposite*(8/100);
+        //     document.write("Your Deposite Amount is "+ deposite+"<br>");
+        //     document.write("Your Interst Amount is "+ interst+"<br>");
+        //     document.write("Your Annual Amount "+ (deposite+interst)+"<br>");
+        // }else if ( deposite >= 50000){
+        //     let interst = deposite*(6/100);
+        //     document.write("Your Deposite Amount is "+ deposite+"<br>");
+        //     document.write("Your Interst Amount is "+ interst+"<br>");
+        //     document.write("Your Annual Amount "+ (deposite+interst)+"<br>");
+        // }else{
+        //     let interst = deposite*(4/100);
+        //     document.write("Your Deposite Amount is "+ deposite+"<br>");
+        //     document.write("Your Interst Amount is "+ interst+"<br>");
+        //     document.write("Your Annual Amount "+ (deposite+interst)+"<br>");
+        // }
+        // document.write("--------------Strick Rate------------------<br>");
+
+        // let run = Number(prompt("Enter Run Scored By the batsman"));
+        // let ball = Number(prompt("Enter ball faced By the batsman"));
+        // let sr = (run / ball)*100;
+        // if(sr > 150){
+        //     document.write("Excellent<br>")
+        // }else if(sr>100){
+        //     document.write("Good<br>");
+        // }else{
+        //     document.write("Average")
+        // }
+
+    </script>
+</body>
+</html>

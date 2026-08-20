@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Product Name:</label>
+        <input type="text" name="" id="pro_name">
+        <br>
+
+        <label for="">Product Price:</label>
+        <input type="number" name="" id="pro_price">
+        <br>
+
+        <label for="">Product Quantity:</label>
+        <input type="number" name="" id="pro_qty">
+
+        <br>
+
+        <button onclick="showData()">Submit</button>
+    </form>
+    <script>
+        function showData(){
+            let pro_name = document.getElementById('pro_name').value;
+            let pro_price = document.getElementById('pro_price').value;
+            let qty = document.getElementById('pro_qty').value;
+    
+            let tot = Number(pro_price)*Number(qty);
+    
+            document.write("Product Name: "+pro_name+"<br>");
+            document.write("product price: "+pro_price+"<br>");
+            document.write("product Quantity: "+qty+"<br>");
+            document.write("Total Amount is: "+tot);
+        }
+    </script>
+</body>
+</html>
